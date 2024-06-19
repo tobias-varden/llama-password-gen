@@ -2,6 +2,10 @@
 
 A small* Python utility for generating a password based on a user-provided input using a Large Language Model (LLM). This project is inspired by Randall Munroe's XKCD comic that suggests using four random words (no space), with a mix of nouns, verbs, adjectives, and adverbs.
 
+## Why
+
+The idea was to use a LLM as a sort of password manager. The LLMs output can be set to deterministic for a given seed. The seed would then be based on the site's url, so each site got their own password in a deterministic manner. This way if you have access to the same LLM and can set the seed you can then generate the same password. However, to make things a bit more secure a salt was added to the seed. Making it less portable then what was initially planned.
+
 ## Features
 
 - Generates a password based on a user-provided input using an LLM.
